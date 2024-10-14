@@ -2,6 +2,9 @@ import RPi.GPIO as GPIO
 import serial
 from time import sleep
 
+# Suppress GPIO warnings
+GPIO.setwarnings(False)
+
 # GPIO pin setup
 ENA = 18
 IN1 = 23
